@@ -1,0 +1,80 @@
+:root {
+    --background-color-blue: #0066af;
+    --border-color-blue:   #ceebff;
+
+    --background-color-yellow: #0066af;
+    --border-color-yellow: #ceebff;
+
+    --background-color-pink: #0066af;
+    --border-color-pink: #ceebff;
+
+    --background-color-green: #0066af;
+    --border-color-green: #ceebff;
+
+    --background-color-purple: #0066af;
+    --border-color-purple: #ceebff;
+
+    --background-color-tan: #0066af;
+    --border-color-tan: #ceebff;
+
+    --background-color-grey: #0066af;
+    --border-color-grey: #ceebff;
+     
+    --background-color-brown: #0066af;
+    --border-color-brown: #ceebff;
+    
+    --background-color-primary: var(--background-color-blue);
+    --border-color-primary: var(--background-color-blue);
+}
+
+#Theme-Container {
+    border: dashed var(--background-color-primary) 5px;
+}
+
+.Color-Options-Container {
+    display: grid;
+    grid-template-columns: 10px 10px 10px 10px;
+    grid-template-rows: 10px 10px;
+    grid-gap: 20px;
+    border: solid red 2px;
+}
+.Color-Options-Container > button {
+    padding: 7px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin: 9px;
+    cursor: pointer;
+}
+
+.Color-Options-Container > #Theme-Blue {
+    border-color: #0066af;
+    background-color: #ceebff;
+}
+.Color-Options-Container > #Theme-Yellow {
+    border-color: #0066af;
+    background-color: #ceebff;
+}
+.Color-Options-Container > #Theme-Pink {
+    border-color: #0066af;
+    background-color: #ceebff;
+}
+.Color-Options-Container > #Theme-Green {
+    border-color: #0066af;
+    background-color: #ceebff;
+}
+.Color-Options-Container > #Theme-Purple {
+    border-color: #0066af;
+    background-color: #ceebff;
+}
+.Color-Options-Container > #Theme-Tan {
+    border-color: #0066af;
+    background-color: #ceebff;
+}
+.Color-Options-Container > #Theme-Grey {
+    border-color: #0066af;
+    background-color: #ceebff;
+}
+.Color-Options-Container > #Theme-Brown {
+    border-color: #0066af;
+    background-color: #ceebff;
+}

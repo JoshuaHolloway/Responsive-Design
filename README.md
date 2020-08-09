@@ -1,4 +1,12 @@
-# (Josh)
+# (Josh) Deployed Site
+
+
+# (Josh) Pull Request URL
+
+
+# (Josh) Components:
+* Theme-Selector
+  * Inspired by: https://www.kirupa.com/
 
 # Responsive-Design
 

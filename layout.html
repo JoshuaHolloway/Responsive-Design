@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Holloway | Home</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+  <div class="Page-Container">
+
+    <header>
+
+    </header>
+
+
+    <div class="item item1">
+        josh
+    </div>
+    <div class="item item2">
+        josh
+    </div>
+    <div class="item item3">
+        josh
+    </div>
+
+    <footer class="item footer">
+        josh
+    </footer>
+  </div>
+
+  <style>
+    .item {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid red;
+    }
+
+    .Page-Container {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 1fr 500px 1fr;
+      grid-template-rows: 150px 150px 100px 100px;
+      grid-template-areas:
+        "header       header      header"
+        "sidebar-1    content     sidebar-2"
+        "sidebar-1    content     sidebar-2"
+        "footer       footer      footer"
+    }
+
+    header {
+        border: solid green 5px;
+        grid-area: header;
+    }
+    footer {
+        grid-area: footer;
+    }
+  </style>
+</body>
+</html>
