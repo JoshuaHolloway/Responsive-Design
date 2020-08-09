@@ -12,19 +12,18 @@
   <div class="Page-Container">
 
     <header>
-
     </header>
 
 
-    <div class="item item1">
-        josh
-    </div>
-    <div class="item item2">
-        josh
-    </div>
-    <div class="item item3">
-        josh
-    </div>
+    <div class="Project"></div>
+    <div class="Project"></div>
+    <div class="Project"></div>
+    <div class="Project"></div>
+
+    <div class="Project"></div>
+    <div class="Project"></div>
+    <div class="Project"></div>
+    <div class="Project"></div>
 
     <footer class="item footer">
         josh
@@ -41,19 +40,24 @@
 
     .Page-Container {
       display: grid;
-      grid-gap: 20px;
-      grid-template-columns: 1fr 500px 1fr;
-      grid-template-rows: 150px 150px 100px 100px;
+      grid-gap: 5px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 100px 200px 200px 200px 100px;
       grid-template-areas:
-        "header       header      header"
-        "sidebar-1    content     sidebar-2"
-        "sidebar-1    content     sidebar-2"
-        "footer       footer      footer"
+        "header       header      header      header"
+        "main-img     main-img    main-title  main-title"
+        "project      project     project     project"
+        "project      project     project     project"
+        "footer       footer      footer      footer"
     }
 
     header {
         border: solid green 5px;
         grid-area: header;
+    }
+
+    .Project {
+        grid-area: project;
     }
     footer {
         grid-area: footer;
