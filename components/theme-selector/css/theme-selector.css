@@ -44,6 +44,10 @@
     border-radius: 5px;
     margin: 9px;
     cursor: pointer;
+    transition: 0.3s;
+}
+.Color-Options-Container > button:hover {
+    transform: scale(2, 2);
 }
 
 .Color-Options-Container > #Theme-Blue {
