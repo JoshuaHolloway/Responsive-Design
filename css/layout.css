@@ -1,4 +1,5 @@
-.Page-Container {
+
+.Page-Container { /* >= 700 */
     display: grid;
     grid-gap: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -8,7 +9,20 @@
         "header-l     header-l    header-r    header-r"
         "project-1    project-2   project-3   project-4"
         "project-5    project-6   project-7   project-8"
-        "footer       footer      footer      footer"
+        "footer       footer      footer      footer";
+}
+@media (max-width: 699px) { /* < 700 */
+    .Page-Container {
+        background: red;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 200px 200px 200px 100px;
+        grid-template-areas:
+        "nav          nav         nav         nav"
+        "header-l     header-l    header-r    header-r"
+        "project-1    project-2   project-3   project-4"
+        "project-5    project-6   project-7   project-8"
+        "footer       footer      footer      footer";
+    }
 }
 
 nav {
