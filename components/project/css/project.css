@@ -13,23 +13,20 @@
     border: solid 5px green;
     height: 100%;
     width: 100%;
-
-    
-    /* cursor: pointer; */
+    cursor: pointer;
 
     /* Have subsequent children inherit parent’s (this element's) perspective */
     transform-style: preserve-3d;
 }
-.Card-Content {
+.Card {
     position: relative;
     transition: 0.5s transform ease;
 }
-/* Stop Glitchy-ness: https://youtu.be/FeJEEE3zc4U */
-/* On .Card hover flip the .Card-Content's */
-.Card:hover .Card-Content{
+/* Stop Glitchy'ness: https://youtu.be/FeJEEE3zc4U */
+/* On .ThreeD-Container:hover, flip the .Card */
+.ThreeD-Container:hover .Card{
     transform: rotateY(180deg);
 }
-
 
 .Card-Face {
     height: 100%;
@@ -45,19 +42,13 @@
     background: paleturquoise;
 }
 
-/* To flip .card__face--back, we add a basic 3D transform of rotateY(180deg). */
+/* Add 3D-transform rotateY(180deg) to flip .Card-Face-Back */
 .Card-Face-Back {
     background: deepskyblue;
     transform: rotateY(180deg);
 }
-/* .Card.is-flipped {
-    transform: rotateY(180deg);
-    
-} */
 
-
-/* 
 .Center {
     display: grid;
     place-items: center;
-} */
+}
